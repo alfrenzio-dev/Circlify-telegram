@@ -22,8 +22,8 @@ TEMP_DIR = Path(os.getenv(
     str(Path.home() / "tmp" / "circlify")
 )) # temp directory
 AFTER_PROCESS_TEXT = "Я так скруглил, что геометры мной гордятся 🤓🔵 Повторим?"
-START_MESSAGE = ("Здарова, братишка 👋
-                 "Подпишись на канал разработчика: @alfrenziodev
+START_MESSAGE = ("Здарова, братишка 👋\n"
+                 "Подпишись на канал разработчика: @alfrenziodev\n"
                  "Кидай видео — я быстро сделаю из него круг.")
 ERROR_MESSAGE = "Ошибка при обработке видео. Убедитесь, что видео не длиннее 60 секунд и формат mp4/mov."
 
