@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: circlify-bot
+    env: python
+    plan: free
+    buildCommand: |
+      apt-get update -y
+      apt-get install -y ffmpeg
+      pip install -r requirements.txt
+    startCommand: python3 main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
